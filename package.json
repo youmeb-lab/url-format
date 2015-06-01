@@ -1,0 +1,25 @@
+{
+  "name": "url-format",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test",
+    "lint": "make eslint"
+  },
+  "author": "Po-Ying Chen <poying.me@gmail.com> (陳柏穎)",
+  "license": "MIT",
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "dependencies": {
+    "qs": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5",
+    "urad-make-eslint": "^2.1.0",
+    "pre-commit": "^1.0.7"
+  }
+}

@@ -1,6 +1,6 @@
 BIN := node_modules/.bin
 MOCHA := $(BIN)/mocha --harmony
-SRC := index.js
+SRC := lib/*.js
 TEST := ./test/*.js
 
 include dependencies.mk

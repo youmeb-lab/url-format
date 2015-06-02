@@ -1,9 +1,11 @@
-BIN := node_modules/mocha
+BIN := node_modules/.bin
 MOCHA := $(BIN)/mocha --harmony
-SRC := $(shell find lib/ -type f -name '*.js')
+SRC := index.js
 TEST := ./test/*.js
 
 include dependencies.mk
 
 test:
 	@$(MOCHA) $(TEST)
+
+.PHONY: test
